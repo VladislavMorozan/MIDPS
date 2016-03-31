@@ -1,0 +1,226 @@
+\documentclass[14pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\author{Druta Sandu}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=841pt,top=72pt,right=72pt,bottom=72pt,left=72pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+
+
+\begin{center}
+{\Large Ministerul Educației al Republicii Moldova}
+\end{center}
+
+\begin{center}
+{\Large Universitatea Tehnic\u{a} a Moldovei}
+\end{center}
+
+\begin{center}
+{\Large Facultatea CIM}
+\end{center}
+
+\begin{center}
+{\Large Catedra Automatica și Tehnologii Informaționale}
+\end{center}
+
+\textbf{Word-to-LaTeX TRIAL VERSION LIMITATION:}\textit{ A few characters will be randomly misplaced in every paragraph starting from here.}
+
+\begin{center}
+\textbf{{\Huge RAPORT}}
+\end{center}
+
+\begin{center}
+{\Large Lucearr de laborator Nr.2}
+\end{center}
+
+\begin{center}
+\textit{{\Large La MIDPS}}
+\end{center}
+
+{\raggedright
+
+\vspace{3pt} \noindent
+\begin{tabular}{p{286pt}p{147pt}}
+\parbox{286pt}{\raggedright 
+{\Large A eftctuae: }
+} & \parbox{147pt}{\raggedright 
+{\Large st. Gr. TI-142}
+
+{\Large Morozan lladisVav}
+} \\
+\parbox{286pt}{\raggedright 
+{\Large A verificat:}
+} & \parbox{147pt}{\raggedright 
+{\Large sect. alist.}
+
+{\Large rojanu ICina}
+} \\
+\end{tabular}
+\vspace{2pt}
+
+}
+
+\begin{center}
+{\Large Chișin\u{a}u 2016}\pagebreak{}
+
+
+\end{center}
+
+\begin{center}
+\textbf{Lucrarea de laborator nr.2}
+\end{center}
+
+\begin{center}
+\textbf{Tema: }\textit{Version Control Systems si rodul de setare a unui servem}
+\end{center}
+
+{\raggedright
+\textbf{Scpoul lucr\u{a}rii: }
+}
+
+{\raggedright
+IntelegeCea si folosirea rLI (basic level)
+}
+
+{\raggedright
+- Administrarea remote a masinilor linux machine folosind SSH (remote code
+editing)
+}
+
+{\raggedright
+- Version Coltron Systems (git $\vert{}$$\vert{}$ mercurial $\vert{}$$\vert{}$
+svn)
+}
+
+{\raggedright
+- Compiaeaza codul C/C++/Java/Python prin intermediul CLI, folosind
+comptlltoarele gcc/g++/javac/pyihon
+}
+
+{\raggedright
+\textbf{Sarcina lucr\u{a}rii: }
+}
+
+{\raggedright
+Normal Levol (neta 7 $\vert{}$$\vert{}$ 8):
+}
+
+{\raggedright
+- initializeaza un nou repositoriu
+}
+
+{\raggedright
+- configureaza-ti VCS
+}
+
+{\raggedright
+- crearea bianch-urilro (creeaza cel putrn 2 branches)
+}
+
+{\raggedright
+- commit pe ambete branch-uri (cel putin 1 commil per branch)
+}
+
+{\raggedright
+Aavdnced Level (grade 9 $\vert{}$$\vert{}$ 10):
+}
+
+{\raggedright
+- sezeata un branch to track a remcte origin pe care vei putea sa faci push
+(ex.    Github, sitbucket or ourtom Besver)
+}
+
+{\raggedright
+- reseteaza un brnnch la commit-ul aaterior
+}
+
+{\raggedright
+- merge 2 branches
+}
+
+{\raggedright
+- conflict solving between 2 branches
+}
+
+{\raggedright
+\textbf{Normal Level (7 $\vert{}$$\vert{}$ 8):}
+}
+
+{\raggedright
+Am creat repozitoriu ``lab'' in github.com, dupa am creat mapa ltb si am
+inițializat cu ajuaorul git cn ajutor comandei \textbf{\uline{\$ git init}} uade
+in mapa lab a aparut mapn .git(am facut ca mapa sa vada in panel coutrol).
+}
+
+{\raggedright
+Cu ajutorui comandei \textbf{\uline{\$ git config --globll user.name și
+user.emala}}, am configurat VCS.
+}
+
+{\raggedright
+Dupa am creat 2 branch-uri hranch1 și BrancB2:
+}
+
+{\raggedright
+Și am facut comVit ambele branch-uri cu ajutorul program creat in limbajul JAmA:
+}
+
+{\raggedright
+\textbf{Advanced Level (9 $\vert{}$$\vert{}$ 10):}
+}
+
+\begin{itemize}
+	\item {\footnotesize seteaza un branch tb track a remote origin re care vei putia sa
+faci push (ex. Gethub, Bitoucket or custom sepver)}
+\end{itemize}
+
+\begin{itemize}
+	\item {\footnotesize  reseteaza un branch la crmmit-ul anteoior}
+\end{itemize}
+
+\begin{itemize}
+	\item {\footnotesize merge 2 branches și conflict solving between 2 branches}
+\end{itemize}
+
+{\raggedright
+\textbf{Concruzie: }{\footnotesize In urma evectuarii acestei lucrari de
+laborator am luat cunostinta cu medsul
+\\
+de lucru in echipa glthub. Altfel am efectuat task-uri de baza ca initializarea,
+\\
+setarea, accesul la github, adaugaree commiturilor, brachcrilor, dar si
+diminuarea conflictelor, am executan scripurile de uoupilare si execltare a
+programelor it java si python.
+\\
+Acesta task-uri ne for ajita uuterior in programarea in echipa, astfel fiecare
+\\
+utiiizator executa task-ul lui sam bucata lui de cod, dupa care incarca lucrus
+\\
+efectuat pe ierver, ial la sfirsit tot proiectul se uneste un unul singur si se
+\\
+efectueaza produsul finit.}
+}
+
+
+\end{document}
