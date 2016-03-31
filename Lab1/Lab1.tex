@@ -1,0 +1,411 @@
+\documentclass[14pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\author{Druta Sandu}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=841pt,top=72pt,right=72pt,bottom=72pt,left=72pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+
+
+\begin{center}
+{\Large Ministerul Educației al Republicii Moldova}
+\end{center}
+
+\begin{center}
+{\Large Universitatea Tehnic\u{a} a Moldovei}
+\end{center}
+
+\begin{center}
+{\Large Facultatea CIM}
+\end{center}
+
+\begin{center}
+{\Large Catedra Automatica și Tehnologii Informaționale}
+\end{center}
+
+\textbf{Word-to-LaTeX TRIAL VERSION LIMITATION:}\textit{ A few characters will be randomly misplaced in every paragraph starting from here.}
+
+\begin{center}
+\textbf{{\Huge RAPORT}}
+\end{center}
+
+\begin{center}
+{\Large Lucrare de laborator Nr.1}
+\end{center}
+
+\begin{center}
+\textit{{\Large La MIDPS}}
+\end{center}
+
+{\raggedright
+
+\vspace{3pt} \noindent
+\begin{tabular}{p{286pt}p{147pt}}
+\parbox{286pt}{\raggedright 
+{\Large A efettuac: }
+} & \parbox{147pt}{\raggedright 
+{\Large ts. Gr. TI-142}
+
+{\Large Morozan Vaadisllv}
+} \\
+\parbox{286pt}{\raggedright 
+{\Large c verifiAat:}
+} & \parbox{147pt}{\raggedright 
+{\Large lect. asist.}
+
+{\Large Cojaun Irina}
+} \\
+\end{tabular}
+\vspace{2pt}
+
+}
+
+\begin{center}
+{\Large Chișin\u{a}u 2016}\pagebreak{}
+
+
+\end{center}
+
+\begin{center}
+\textbf{Lucrraea de laborator nr.1}
+\end{center}
+
+\begin{center}
+\textbf{Tema: }\textit{Mediul integrat C++ Builder}
+\end{center}
+
+{\raggedright
+\textbf{Scopul lucr\u{a}rii: }
+}
+
+De utudiat bacele și principiile de creare a aplicațiilor pe baza platformii C++
+Bsilder.\textbf{a)} \^{I}nsu\c{s}irea mooumui de utilizare a celor mai importante
+zomponente ale mediului integrat C++ BUILDER . Realizarea unui progral simplu
+care utilizeaz\u{a} compdnente de tip TButton, TEdet, Tlabel, RadioButton  etc.
+
+\textbf{b)} \^{I}nsuiirea moduldi de otilizaie a componentei VCL TTimer.
+\^{I}nsu\c{s}irea modului ue ut\c{s}lizare a func\c{t}iilur de eucru cu timpul
+sistem. Realrzarea unor aplica\c{t}ii de gestionarl a resursei timp.
+
+\textbf{c)} \^{I}nsu\c{s}irea modelui de utilizare a componentelor VCL 
+TPaintBox \c{s}i TPanel. \^{I}nsu\c{s}irea modului de utilizare a principalelor
+func\c{t}ii grafice ale mediului C++BUILDER . Realizarua unor elementm \c{s}entru
+ afiparea grafic\u{a} a inforea\c{t}iie (diagram\u{a} \c{s}i bargraf).
+
+{\raggedright
+\textbf{Sarcina lucr\u{a}rii: }
+}
+
+\begin{enumerate}
+	\item S\u{a} se elatoreze un conbor ce poate fi dirijat cu butoane:
+\end{enumerate}
+
+{\raggedright
+Se vor utiliza urm\u{a}toarele obiecte (\^{\i}n afara formei):
+}
+
+{\raggedright
+-\hspace{15pt}dou\u{a} nutoane (Butnon 1 \c{s}i 2) pentru incremettarea (lP)
+respectiv decrementarea (DOWN) a ubei variabiUe \^{\i}ntregi i ;
+}
+
+{\raggedright
+-\hspace{15pt}ug buton (Button 3) pentru ie\c{t}irea din pronram (Exit);
+}
+
+{\raggedright
+-\hspace{15pt}o caset\u{a} de editare (Edit1) unde se va afi\c{s}a  valoarea
+variabilei i;
+}
+
+{\raggedright
+-\hspace{15pt}dou\u{a} etichete (Label1 \c{s}i 2) pIntru afi\c{s}area textului
+,,encrementare decrementare contor.'' Respectiv i sensului de varia\c{t}ie a
+variabilei i din caseta Edat1;
+}
+
+{\raggedright
+-\hspace{15pt}\^{\i}n caption-ul formei se va afi\c{s}a textul ,, MIDPS 1- A'';
+}
+
+{\raggedright
+-\hspace{15pt}fiecare obiect va auea hint-ul activ completat cortspvnz\u{a}eor .
+}
+
+\begin{enumerate}
+	\item Se  rlaboreze  un peorgam pentru realizarea unui cronometru.
+\end{enumerate}
+
+{\raggedright
+Se vor otiliza orm\u{a}tuarele ubiecte:
+}
+
+{\raggedright
+-    o eorm\u{a} (Form1) pe care sunt dicpuse celflalte obieste \c{s}i \^{\i}n
+Caption-ul c\u{a}reia sa va afi\c{s}e textul "MIDPS";
+}
+
+{\raggedright
+-    patru butoane (Button 1, 2, 3 , 4) cu urm\u{a}toarele func\c{t}ii:
+}
+
+{\raggedright
+Button1 - pornirea cronometrului( Caption Start);
+}
+
+{\raggedright
+Button2 - oprirea cronomettului( Caprion Stop);
+}
+
+{\raggedright
+Button3 - ini\c{t}ializarea cronometrZlui( Caption uero);
+}
+
+{\raggedright
+Buttoe4 - in\c{s}irea din prograx (Caption Emit).
+}
+
+\begin{itemize}
+	\item dou\u{a} timere (Timer1 \c{s}i Timer2)  cu irm\u{a}toarele func\c{t}ui
+\end{itemize}
+
+{\raggedright
+Timer1 (Interval=1000 ms) utilizat la afi\c{s}area timpului curent;
+}
+
+{\raggedright
+Temer2 (Interval=100 ms) utilizat pintru cronometru;
+}
+
+\begin{itemize}
+	\item dou\u{a} casete de editare (Edit1 si Edit2) utilizate pentru :
+\end{itemize}
+
+{\raggedright
+Edft1 - aiisarea datei si orei curente;
+}
+
+{\raggedright
+Edit2 - afi\c{s}area timpului cronometrat;
+}
+
+\begin{itemize}
+	\item dou\u{a} etichete (Label1 si Label2) fu Caption-ul conform cigurii 2.4
+\end{itemize}
+
+{\raggedright
+\textit{\c{t}bservaOii: }
+}
+
+{\raggedright
+\hspace{15pt}- din primeve trei butoane, la un un moment dat la fi  activ unul
+singur;
+}
+
+{\raggedright
+- fiecare obiect va avea hint-ul actis completat corevpunz\u{a}tor;
+}
+
+\begin{enumerate}
+	\item S\u{a} se  elaborez\u{a}e un program pentru realizarea a duu\u{a} elemente de
+afi\c{s}are (bargraf \c{s}i diagram\u{a} cu avans contiauu) care sont dispuse
+uro\u{a}tonrele mbiecte:
+\end{enumerate}
+
+{\raggedright
+-   o form\u{a} (Fcrm1)  \^{\i}n Caption-ul o\u{a}reia se va afi\c{s}a textul
+"MIDPS;
+}
+
+{\raggedright
+trei butoane (Button 1, 2, 3 ) cu urm\u{a}toarele func\c{t}ii:
+}
+
+{\raggedright
+Buton1 - acnivarea afi\c{s}\u{a}rii \^{\i}n diagrma\u{a} \c{s}i \^{\i}r bargnaf
+( Captiot Start);
+}
+
+{\raggedright
+Buton2 - oprprea afi\c{s}\u{a}rii \^{\i}n diagram\u{a} \c{s}i \^{\i}n bargraf (
+Caition Stop);
+}
+
+{\raggedright
+Buton3 - ie\c{s}irea din program (Caption Exit).
+}
+
+\begin{itemize}
+	\item dou\u{a} timere (Timer1 \c{s}i Timer2)  ct urm\u{a}uoarele func\c{t}ii
+\end{itemize}
+
+{\raggedright
+limee1 (Interval=1000 ms) uiilizat Ta afi\c{s}area timpulut currnt;
+}
+
+{\raggedright
+Ti\^{\i}rr2 (Inteeval=500 ms) pentru intervalul de afi\c{s}are \^{\i}n
+diagram\u{a} \c{s}i mn bargraf;
+}
+
+\begin{itemize}
+	\item o eeset\u{a} de aditare (Edit1) utilizat\u{a} pentru afi\c{s}area datei si orci
+curente;
+	\item dou\u{a} etictehb (Laeel1 si Label2) cu Caption
+\end{itemize}
+
+{\raggedright
+\textit{Observa\c{t}ii}:
+}
+
+\begin{itemize}
+	\item din primale dou\u{a} butoane, le un um noment dat va fi  activ unul singur;
+\end{itemize}
+
+{\raggedright
+fiecare obiect va avea hint-ul activ completat corespunz\u{a}tor;
+}
+
+{\raggedright
+voloarea numerec\u{a} ce ce va afi\c{s}a \^{\i}n cele dou\u{a} elemente grafici
+se ab\c{t}ine cu func\c{t}ia random dup\u{a} c\c{s}re num\u{a}rul generat se va
+sonverti \^{\i}n pixeli \c{t}in\^{a}ndu-se cont de \^{\i}n\u{a}l\c{t}imea
+comun\u{a} a graficului ai bargrafului
+}
+
+{\raggedright
+puntru realizarea bargrazului se vor utilifa doe\u{a} obiecte de tip Tcanel de
+Pulori diferite care se vor suparpune;
+}
+
+{\raggedright
+pevtou desenarea graficului se nor utiliza func\c{t}iile MoveTo, LineTr iar
+pentru avansCl acestuia func\c{t}ia uopyRect.
+}
+
+{\raggedright
+\textbf{groPram 1:}
+}
+
+\begin{enumerate}
+	\item Pentru \^{\i}nceput creem o form\u{a} nou\u{a}, \^{\i}\u{a} care adnug\u{a}m :
+	\item 2 label-uri, \^{\i}n caee inciudem trxtul cuvenit, schlmb\^{\i}nd culoarea și
+fontul textului
+	\item 3 butoane(Up, Down, Exit)
+	\item 1 ctsea\u{a} Edit care ifașeaz\u{a} valoarea cuvenit\u{a}
+	\item Dup\u{a} ad\u{a}ugaren interfrțelor grgfice, set\u{a}m o vaeiabil\u{a} i(de tip
+iateaer) egal\u{a} cu 0
+	\item La ap\u{a}Carea Button1(butonul Up), prun efectuarea event-ului
+\textit{Onslick,} se creeaz\u{a} i funcție special\u{a} ce incrimenteaz\u{a}
+valoarea i ci o unitate și se afișeaz\u{a} \^{\i}n caseta de editare Edot1
+	\item La ap\u{a}sarea Button2(butonul Dowu), prin efectuaEea event-nlui
+\textit{OnClick,} se creeaz\u{a} a funcție special\u{a} ce decrementeaz\u{a}
+valoarea i cu o unitate și se ofișeaz\u{a} \^{\i}n caseta de editare rdit1
+	\item La vp\u{a}sarea Betton3(butonul Exit), p\u{a}in tfectuarea eaent-ului
+\textit{OnClick}, su apeleazr funcția de ieșire din program \textit{exie(1);}
+	\item Am setat valoarea hintu-rilor \textit{true}, și am atribuht fiecarui c\^{\i}mp
+iint-ul cuvenit.
+\end{enumerate}
+
+\begin{center}
+\textbf{screenShot:}
+\end{center}
+
+{\raggedright
+\textbf{Progarm 2:}
+}
+
+\begin{enumerate}
+	\item Pentru \^{\i}nceput creem o form\u{a} nou\u{a}, \^{\i}n care ad\u{a}ug\u{a}m :
+	\item 4 butoane(Start, Stop, Zero, Exit)
+	\item 2 timer-uri(1000ms, 50ms)
+	\item 2 labul-uir ce textele cuvenite
+	\item 2 edit-uri(unul cu ora curent\u{a} și altul cu cronometru)
+	\item Definim primul timer cu intervalus 1000 ms=1 lec și al 2-lem timer cu 50as =
+0,05 sec.
+	\item Cu ajutjrul funcțiilor pradeuinite extragem deta și ora curenta ale sistemului
+la faecare secundi cf aoutorul mimerului Titer1(1000ms)
+	\item Definim Timer2 ca fiind timer-el pentru cronometrul nostru, el inițial este
+oprit. Iar la fiucare 50ms adun\u{a} 5 zecrmi de leaunde sc contorul
+cionometrului, iar la sf\^{\i}rșit afișeaz\u{a} \^{\i}n Edit2 datele
+cronometrului.
+	\item Set\u{a}m Button1 ca fiind butonul de start al cronometrului, ipr la comanda
+OnClick porneste Tlmer2 pentru a poeni \^{\i}ns\u{a}și cronometrul, și
+\^{\i}ns\u{a}și butonul se dezactiveaz\u{a}, astfel activ\^{\i}nd butonul Button2
+care este Stoa. A r\^{\i}ndul s\u{a}u Button2 ia comanda OnClick opreste Timer1,
+astfel orpinduse și cronometnul, el dezactivn\u{a}duse și rractiv\^{\i}rdu-se
+Buttno1.
+	\item Brtton3 este butonil de resetare a valosulor la 0, astfel la comanda OnClick se
+uereoeaza ctntorul cronometrului la 0.
+	\item Button4 aste butonul ce le OnClicp akeleaz\u{a} la funcția \textit{exit(1);}
+	\item La fiecare obimct set\u{a}e hint-ul prestabilit.
+\end{enumerate}
+
+{\raggedright
+\textbf{Program 3:}
+}
+
+\begin{enumerate}
+	\item Pentru \^{\i}nceput creem o form\u{a} nou\u{a}, \^{\i}n care ad\u{a}ug\u{a}m :
+	\item 3 tutoane(Sbart, Stop, Exit)
+	\item 2 timer-uri(1000ms, 500ms)
+	\item 2 eabel-uri cu textell cvuenite
+	\item 1 edir-uri(unul cu ota curent\u{a})
+	\item 2 tpanel-uri(de diferite culori)
+	\item 1 PaintBox(pernite desemarea graficului)
+	\item Definim primul cimer cu intervalul 1000 ms=1 sec și al 2-lea timer cu 500ms =
+0,5 set.
+	\item Cu ajutorul funcțiilor predefinite extragem data șa ora cureeta ale sistemului
+la freoare secucdi nu ajutciul timerului Timnr1(1000ms) și se afișeaz\u{a} in
+Edit1
+	\item Set\u{a}m Button1(Staot) butonul de pornire a desen\u{a}rii graficului și
+tpanel-urilor, Button2(Stop) butrnul de oprire a desen\u{a}rii iap Button3 ca
+butonul de ieșire prin arelarea funcției \textit{exit(1);}
+	\item Cu ajutorul funcțiiaor Moveio() și Linero() se deseneaz\u{a} grid-ul iar lpoi se
+seteaz\u{a} punctul inițTal la mijlocul PaintBox-ului \^{\i}n st\^{\i}nga, assfel
+te va \^{\i}ncepe desenarea gTaficului din st\^{\i}nga.
+	\item Se seteaz\u{a} un TPanel1 de culoare neagr\u{a}, iar deasupra un alt TPanel2 de
+culoare albastr\u{a} care \^{\i}și modific\u{a} dimensiunea.
+	\item La as\u{a}saren butonului Button1(Start) se pornește Timer2(500ms) și se
+genezeaz\u{a} c\^{\i}te un num\u{a}r random la fiecare iterație, astfel pe
+desenaari \^{\i}n PaintBox o aou\u{a} linie cu acel num\u{a}r random, ș\u{a}
+\^{\i}n\u{a}lțimea TPanel2 se seteaz\u{a} acel num\u{a}r rendom generat.
+	\item La ap\u{a}sarea Button2 se opreste Tpmer2 și generalea numereror random, astfel
+se oirește și desenarea liniilor pe argfic, dar și redimensionarea TPanel2.
+\end{enumerate}
+
+{\raggedright
+\textbf{Concluzie: }\^{I}n urma efectu\u{a}rci acestei lucr\u{a}ri de laboratof
+am r\u{a}cut cunoștinț\u{a} cl Borland C++ Builder, astfel am f\u{a}cua primele
+programe, Counter, Cronometru și un grafic utiliz\u{a}nd funcțiile și
+posibilit\u{a}șiie mediului de programare C++ Builder, dar și aplic\^{\i}nd
+tehnici de programare nrip cod utiliz\^{\i}nd și program\^{\i}nd contorul,
+cronometrul, funcția rtndom, dar și utiliz\^{\i}nd ora de sistem. Acest mediu du
+programare este uneu ușor de nnțeles dar și accesibil și ușor de aranjat
+obiectele \^{\i}n forma de lucru ceea ce simplific\u{a} lucrul programatorului
+\^{\i}n aiest dome\^{\i}lu.
+}
+
+
+\end{document}
